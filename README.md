@@ -12,6 +12,7 @@
 * Dotenv
 * Nodemon
 * Docker
+* Jest
 
 ## 💻 Prerequisites
 
