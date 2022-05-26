@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  postgresDb:
+    image: postgres:13
+    container_name: postgresDb
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=userAdmin
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=fullstack
+    volumes:
+      - photo:/data/postgres
+
+  backend:
+    restart: unless-stopped
+    image: backend
+    build: ./backend
+    ports:
+      - 3001:3001
+    depends_on:
+      - "postgresDb"
+    environment:
+      - DB_NAME=fullstack
+      - USER_NAME=userAdmin
+      - DB_PASSWORD=123456
+      - HOST_NAME=postgresDb
+
+volumes:
+  photo:
+    driver: local
+
