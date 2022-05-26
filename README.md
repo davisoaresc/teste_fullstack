@@ -32,7 +32,23 @@ With the project cloned on your machine and inside the `test_fullstack` director
 ```
 docker-compose up -d --build
 ```
-Wait for the installation until the message `Connected on port 3001` appears in your terminal.
+
+#### Testing the application
+
+The back-end of this application has unit tests for the Controllers and Middlewares. **To run them and check test coverage, follow these instructions:**
+
+Navigate to the `server` directory
+```
+cd backend
+```
+Install dependencies:
+```
+npm install
+```
+Start the tests
+```
+npm test
+```
 
 
 ## API Endpoints
