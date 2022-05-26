@@ -22,12 +22,12 @@ This application uses [Docker](https://www.docker.com/get-started/) and [Docker 
 
 Open your terminal and type the following commands:
 ```
-git clone git@github.com:davisoaresc/test_fullstack.git
+git clone git@github.com:davisoaresc/teste_fullstack.git
 
-cd test_fullstack
+cd teste_fullstack
 ```
 ## 🚀 Starting the Application
-With the project cloned on your machine and inside the `test_fullstack` directory, run the following docker compose command:
+With the project cloned on your machine and inside the `teste_fullstack` directory, run the following docker compose command:
 
 ```
 docker-compose up -d --build
