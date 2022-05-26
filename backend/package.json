@@ -1,0 +1,27 @@
+{
+  "name": "test-fullstackjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predebug": "npx knex migrate:latest --knexfile db/knexfile.js",
+    "start": "node server.js",
+    "debug": "nodemon server.js",
+    "test": "jest"
+  },
+  "author": "Davi Coura",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.0.0",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
+  }
+}
